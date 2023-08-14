@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGEND VIRAL</title>
+  <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url("legendviraltwitterbot2.png");
+    }
+
+    .card {
+      margin-top: 50px;
+  
+    }
+
+    .card-header {
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .form-control {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      margin-top: 10px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card ">
+          <div class="card-header">
+            TIMELINE TWITTER BOT
+          </div>
+          <div class="card-body">
+            
+              <div class="form-group" id="form">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+              </div>
+              <div class="form-group">
+                <label for="comment1">How Many Times Do You Want To Comment Each Hour? </label>
+                <input type="text" class="form-control" id="iteration" placeholder="Recommend 30 or less ">
+              </div>
+              <div class="form-group" id="commentGroup">
+                <label for="comment1">Comment</label>
+                <input type="text" class="form-control comments"  placeholder="Enter comment">
+              </div>
+              <div class="form-group" id="addedComments">
+
+              </div>
+              <button id="add-comment" class="btn btn-primary btn-block">Add Comment</button>
+             
+              <button id="submit-button" class="btn btn-success btn-block">Run Bot</button>
+              <button id="stop-button" class="btn btn-danger btn-block">STOP BOT</button>
+             
+          </div>
+
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+          <div class="card-header">
+           KEYWORD SEARCH TWITTER BOT
+          </div>
+          <div class="card-body">
+            
+              <div class="form-group" id="form">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="usernameKeyword" placeholder="Enter your username">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="passwordKeyword" placeholder="Enter your password">
+              </div>
+              <div class="form-group">
+                <label for="comment1">How Many Times Do You Want To Comment Each Hour? </label>
+                <input type="text" class="form-control" id="iterationKeyword" placeholder="Recommend 30 or less ">
+              </div>
+              <div class="form-group">
+                <label for="keyword">What Keyword Or Phrase Do You Want To Comment On? </label>
+                <input type="text" class="form-control" id="keyword" placeholder="Type Your Keyword Here ">
+              </div>
+
+              <label for="page">Do You Want To Comment On Top Tweets Or Most Recent Tweets? </label>
+            <br>
+          
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="RecentTweets">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Most Recent Tweets
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="TopTweets" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Top Tweets
+                </label>
+              </div>
+              <div class="form-group" id="commentGroupKeyword">
+                <label for="comment1">Comment</label>
+                <input type="text" class="form-control commentsKeyword"  placeholder="Enter comment">
+              </div>
+              <div class="form-group" id="addedCommentsKeyword">
+
+              </div>
+              <button id="add-comment-keyword" class="btn btn-primary btn-block">Add Comment</button>
+             
+              <button id="submit-button-keyword" class="btn btn-success btn-block">Run Bot</button>
+              <button id="stop-button-keyword" class="btn btn-danger btn-block">STOP BOT</button>
+             
+          </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+  <script src="./../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    require('./render.js');
+  </script>
+  </body>
+  </html>
